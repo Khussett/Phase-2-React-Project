@@ -45,13 +45,11 @@ function App() {
       <>
         <Navbar />
         <div className="form" id="form">
-        
           <input
             type="text"
-            className=""
+            className="search-input"
             placeholder="Search for pics"
             onKeyDown={(e) => searchImages(e)}
-            
           />
         </div>
         <Routes>
@@ -62,7 +60,7 @@ function App() {
                 dataLength={data.length}
                 next={fetchImages}
                 hasMore={hasMore}
-                loader={<h4>Loading...</h4>}
+                loader={<h4 className="loader">Loading...</h4>}
                 endMessage={
                   <p style={{ textAlign: 'center' }}>
                     <b>Yay! You have seen it all</b>
