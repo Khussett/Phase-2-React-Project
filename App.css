@@ -6,6 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
+.btn{
+  margin: 2px;;
+}
+.divbtn{
+  float: left;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -28,6 +34,10 @@
   color: #61dafb;
 }
 
+.nav {
+background-color: aqua;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,5 +46,4 @@
     transform: rotate(360deg);
   }
 }
-
 

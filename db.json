@@ -1,0 +1,22 @@
+{
+  "employee": [
+    {
+      "name": "Chinonso Ezugu",
+      "email": "chin@test.com",
+      "phone": "645-987-1234",
+      "id": "31c2"
+    },
+    {
+      "name": "Karlton Hussett",
+      "email": "hussett@gmail.com",
+      "phone": "7189262885",
+      "id": "d901"
+    },
+    {
+      "name": "Karl Finster",
+      "email": "karl@test.com",
+      "phone": "6464652393",
+      "id": "651b"
+    }
+  ]
+}
