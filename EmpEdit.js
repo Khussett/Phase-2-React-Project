@@ -32,11 +32,9 @@ const EmpEdit = () => {
 
     const handlesubmit=(e)=>{
       e.preventDefault();
-      const empdata={name,email,phone, active};
-       if(empdata === empdata) {
-        console.log("The information entered already exists. Please try again.")
+      const empdata={id,name,email,phone,active};
+      
 
-       }
       fetch("http://localhost:8000/employee/"+empid,{
         method:"PUT",
         headers:{"content-type":"application/json"},
@@ -75,7 +73,7 @@ const EmpEdit = () => {
                                     <div className="form-group">
                                         <label>Name</label>
                                         <input required value={name} onMouseDown={e=>valchange(true)} onChange={e=>namechange(e.target.value)} className="form-control"></input>
-                                    {name.length===0 && validation && <span className="text-danger">Enter the name</span>}
+                                    {name.length==0 && validation && <span className="text-danger">Enter the name</span>}
                                     </div>
                                 </div>
 
@@ -92,7 +90,6 @@ const EmpEdit = () => {
                                         <input value={phone} onChange={e=>phonechange(e.target.value)} className="form-control"></input>
                                     </div>
                                 </div>
-                                
 
                                 <div className="col-lg-12">
                                     <div className="form-check">

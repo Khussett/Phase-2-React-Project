@@ -45,22 +45,22 @@ const EmpListing = () => {
                 <div className="card-body">
                     <div className="divbtn">
                         <Link to="employee/create" className="btn btn-success">Add New (+)</Link>
+                        <Link to="employee/create" className="btn btn-success">Back</Link>
+
                     </div>
                     <table className="table table-bordered">
                         <thead className="bg-dark text-white">
                             <tr>
-                                <td style={{ color: 'white', backgroundColor: 'black' }}>ID</td>
-                                <td style={{ color: 'white', backgroundColor: 'black' }}>Name</td>
-                                <td style={{ color: 'white', backgroundColor: 'black' }}>Email</td>
-                                <td style={{ color: 'white', backgroundColor: 'black' }}>Phone</td>
-                                <td style={{ color: 'white', backgroundColor: 'black' }}>Action</td>
+                                <td>ID</td>
+                                <td>Name</td>
+                                <td>Email</td>
+                                <td>Phone</td>
+                                <td>Action</td>
                             </tr>
                         </thead>
                         <tbody>
 
-                            
-                    {  
-                        empdata &&
+                            {empdata &&
                                 empdata.map(item => (
                                     <tr key={item.id}>
                                         <td>{item.id}</td>

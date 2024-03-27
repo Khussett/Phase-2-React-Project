@@ -1,19 +1,14 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
 const About = () => {
-  return (
-    <div style={{ backgroundColor: "aqua" }} >
-      <p>Our mission at Staff Solutions Simplified is to revolutionize and improve 
-        how company staffing needs are handled and met. Our web application 
-        serves as a simple and effective way to create, update, and remove staff information 
-        as needed. No matter a company's staffing size, we have you covered. For additional 
-        information contact us at (123) 456-7890 or send an email to
-         <b> ssolutions@test.com</b>.</p>
-
-         <Link to="/" className="btn btn-danger">Take Me To The App</Link>
-
-    </div>
-  )
+    return (  
+        <div>
+            <p style={{ backgroundColor: 'navy', color: 'white', padding: '10px' }}>
+                <h3>
+                We at Staffing Solutions Simplified maintain our aim to make managing staff a
+                main priority for our clients. Thank you for visiting our site. Contact us at <b>(123) 456-7000 </b>
+                or email at <b>ssolutions@questions.com</b>. </h3>
+            </p>
+        </div>
+    );
 }
-
-export default About
+ 
+export default About;
